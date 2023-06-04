@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
+import com.example.linefood.databinding.ActivityBottomBinding
+import com.example.linefood.ui.home.HomeFragment
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,7 +18,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onFinish(){
-                val intent = Intent(this@MainActivity, MenuActivity::class.java)
+                val intent = Intent(this@MainActivity,BottomActivity::class.java)
                 startActivity(intent)
                 finish()
             }
