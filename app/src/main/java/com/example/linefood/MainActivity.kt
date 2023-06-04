@@ -24,5 +24,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         timer.start()
+
     }
+
 }
