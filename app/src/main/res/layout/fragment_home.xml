@@ -4,24 +4,77 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
+    tools:context=".ui.home.HomeFragment"
+    android:background="#efffde">
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_zavtrak"
         android:layout_width="280dp"
         android:layout_height="97dp"
         android:layout_marginStart="64dp"
-        android:layout_marginTop="240dp"
+        android:layout_marginTop="152dp"
         android:layout_marginEnd="64dp"
-        android:text="Завтрак"
-        android:textSize="20dp"
-        android:textColor="#8732CF"
-        android:textAlignment="textStart"
+        android:backgroundTint="@color/white"
         android:fontFamily="@font/gotham"
-        android:background="@drawable/oval_button"
+        android:text="Завтрак"
+        android:textAlignment="textStart"
+        android:textColor="#8732CF"
+        android:textSize="20dp"
+        app:cornerRadius="19dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_obed"
+        android:layout_width="280dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="64dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/gotham"
+        android:text="Обед"
+        android:textAlignment="textStart"
+        android:textColor="#8732CF"
+        android:textSize="20dp"
+        app:cornerRadius="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_zavtrak" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_ujin"
+        android:layout_width="280dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="64dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/gotham"
+        android:text="Ужин"
+        android:textAlignment="textStart"
+        android:textColor="#8732CF"
+        android:textSize="20dp"
+        app:cornerRadius="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_obed" />
+
+    <TextView
+        android:id="@+id/textHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="188dp"
+        android:layout_marginBottom="34dp"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiabetsActivity"
+    android:background="#efffde">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/gotham"
+        android:text="Диета для диабетиков"
+        android:textColor="#8732CF"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="407dp"
+        android:layout_height="680dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/gotham"
+            android:layout_gravity="center"
+            android:text="Завтрак"
+            android:textColor="#8732CF"
+            android:textSize="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textViewZavtrakDiabet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/gotham"
+            android:gravity="center"
+            android:text="Гречневая каша на воде.\n Запеченое яблоко.\n  Несладкий чай."
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/gotham"
+            android:text="Обед"
+            android:textColor="#8732CF"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewZavtrakDiabet" />
+
+        <TextView
+            android:id="@+id/textViewObedDiabet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/gotham"
+            android:gravity="center"
+            android:text="Рыбный суп.\n Паровая котлета с овощами.\n Кисель."
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/gotham"
+            android:text="Ужин"
+            android:textColor="#8732CF"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewObedDiabet" />
+
+        <TextView
+            android:id="@+id/textViewUjinDiabet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/gotham"
+            android:gravity="center"
+            android:text="Ленивые голубцы. \n Несладкий чай."
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <TextView
+                android:id="@+id/textViewCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/gotham"
+                android:gravity="center"
+                android:text="Что нельзя при сахарном диабете?"
+                android:textColor="#8732CF"
+                android:textSize="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewObedDiabet" />
+            <TextView
+                android:id="@+id/textViewChtoNelza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/gotham"
+                android:gravity="center"
+                android:text="МОЛОЧНЫЕ ПРОДУКТЫ: Кефир, молоко. \n \n
+ОВОЩИ: Свекла, морковь, картофель.\n \n
+КРУПА: Пшеничная, манная.\n \n
+ФРУКТЫ И ЯГОДЫ: Арбуз, виноград, бананы, малина, изюм, дыня, киви.\n \n
+МЯСНЫЕ ПРОДУКТЫ: Колбаса, сосиски, свинина, жирные сорта мяса, первые мясные бульоны.\n \n
+САХАРОСОДЕРЖАЩИЕ ПРОДУКТЫ: Конфеты, шоколад, сладкая выпечка, сахар."
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewCancel" />
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

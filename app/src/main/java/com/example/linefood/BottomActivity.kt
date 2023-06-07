@@ -1,6 +1,8 @@
 package com.example.linefood
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -31,5 +33,12 @@ class BottomActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+    }
+
+    fun newActivity(view: View) {
+        val intent = Intent(this@BottomActivity,DiabetsActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 }
