@@ -135,16 +135,48 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/gotham"
                 android:gravity="center"
-                android:text="МОЛОЧНЫЕ ПРОДУКТЫ: Кефир, молоко. \n \n
-ОВОЩИ: Свекла, морковь, картофель.\n \n
-КРУПА: Пшеничная, манная.\n \n
-ФРУКТЫ И ЯГОДЫ: Арбуз, виноград, бананы, малина, изюм, дыня, киви.\n \n
-МЯСНЫЕ ПРОДУКТЫ: Колбаса, сосиски, свинина, жирные сорта мяса, первые мясные бульоны.\n \n
-САХАРОСОДЕРЖАЩИЕ ПРОДУКТЫ: Конфеты, шоколад, сладкая выпечка, сахар."
+                android:text="МОЛОЧНЫЕ ПРОДУКТЫ: Кефир, молоко. \n \n \n
+ОВОЩИ: Свекла, морковь, картофель.\n \n \n
+КРУПА: Пшеничная, манная.\n \n \n
+ФРУКТЫ И ЯГОДЫ: Арбуз, виноград, бананы, малина, изюм, дыня, киви.\n \n \n
+МЯСНЫЕ ПРОДУКТЫ: Колбаса, сосиски, свинина, жирные сорта мяса, первые мясные бульоны.\n \n \n
+САХАРОСОДЕРЖАЩИЕ ПРОДУКТЫ: Конфеты, шоколад, сладкая выпечка, сахар. \n"
                 android:textColor="@color/black"
                 android:textSize="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textViewCancel" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/ButtonTakeDietDiabet"
+                    android:layout_width="135dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="60dp"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/gotham"
+                    android:text="Выбрать диету"
+                    android:textColor="#8732CF"
+                    android:textSize="17dp"
+                    app:cornerRadius="19dp" />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/ButtonBack"
+                    android:layout_width="135dp"
+                    android:layout_height="75dp"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/gotham"
+                    android:text="Назад"
+                    android:textSize="17dp"
+                    android:textColor="#8732CF"
+                    app:cornerRadius="19dp" />
+
+        </LinearLayout>
 
 
 
