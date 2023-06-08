@@ -50,11 +50,11 @@
             android:id="@+id/textViewZavtrakDiabet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_gravity="left"
             android:layout_marginTop="32dp"
             android:fontFamily="@font/gotham"
-            android:gravity="center"
-            android:text="Гречневая каша на воде.\n Запеченое яблоко.\n  Несладкий чай."
+            android:gravity="left"
+            android:text=" · Гречневая каша на воде\n \n · Запеченое яблоко\n \n · Несладкий чай"
             android:textColor="@color/black"
             android:textSize="25dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -77,11 +77,11 @@
             android:id="@+id/textViewObedDiabet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_gravity="left"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/gotham"
-            android:gravity="center"
-            android:text="Рыбный суп.\n Паровая котлета с овощами.\n Кисель."
+            android:gravity="left"
+            android:text=" · Рыбный суп\n \n · Паровая котлета с овощами\n \n · Кисель"
             android:textColor="@color/black"
             android:textSize="25dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -105,10 +105,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:layout_gravity="center"
+            android:layout_gravity="left"
             android:fontFamily="@font/gotham"
-            android:gravity="center"
-            android:text="Ленивые голубцы. \n Несладкий чай."
+            android:gravity="left"
+            android:text=" · Ленивые голубцы \n \n · Несладкий чай."
             android:textColor="@color/black"
             android:textSize="25dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -137,12 +137,12 @@
                 android:gravity="left"
                 android:text="МОЛОЧНЫЕ ПРОДУКТЫ:\n \n  · кефир \n  \n  · молоко \n \n \n
 ОВОЩИ:\n \n · свекла \n \n · морковь \n \n · картофель.\n \n \n
-КРУПА: Пшеничная, манная.\n \n \n
-ФРУКТЫ И ЯГОДЫ: Арбуз, виноград, бананы, малина, изюм, дыня, киви.\n \n \n
-МЯСНЫЕ ПРОДУКТЫ: Колбаса, сосиски, свинина, жирные сорта мяса, первые мясные бульоны.\n \n \n
-САХАРОСОДЕРЖАЩИЕ ПРОДУКТЫ: Конфеты, шоколад, сладкая выпечка, сахар. \n"
+КРУПА: \n \n · пшеничная \n \n · манная.\n \n \n
+ФРУКТЫ И ЯГОДЫ: \n \n · арбуз \n \n · виноград \n \n · бананы \n \n · малина \n \n · изюм \n \n · дыня \n \n · киви\n \n \n
+МЯСНЫЕ ПРОДУКТЫ: \n \n · колбаса \n \n · сосиски \n \n · свинина \n \n · жирные сорта мяса \n \n · первые мясные бульоны\n \n \n
+САХАРОСОДЕРЖАЩИЕ ПРОДУКТЫ: \n \n · конфеты \n \n · шоколад \n \n · сладкая выпечка \n \n · сахар. \n"
                 android:textColor="@color/black"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textViewCancel" />
 

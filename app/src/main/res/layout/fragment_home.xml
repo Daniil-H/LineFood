@@ -20,6 +20,7 @@
         android:textAlignment="textStart"
         android:textColor="#8732CF"
         android:textSize="20dp"
+        android:onClick="Zavtrak"
         app:cornerRadius="19dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.333"

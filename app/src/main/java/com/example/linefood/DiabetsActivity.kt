@@ -22,10 +22,16 @@ class DiabetsActivity : AppCompatActivity() {
 
     fun getMenuDiabet(view: View) {
         val zavtrak =findViewById<TextView>(R.id.textViewZavtrakDiabet)
+        val obed =findViewById<TextView>(R.id.textViewObedDiabet)
+        val ujin =findViewById<TextView>(R.id.textViewUjinDiabet)
 
         val zvtr: String = zavtrak.getText().toString()
+        val obd: String = obed.getText().toString()
+        val ujn: String = ujin.getText().toString()
         val intent = Intent(this, BreakfastActivity::class.java)
         intent.putExtra("name", zvtr)
+        intent.putExtra("obd", obd)
+        intent.putExtra("ujn", ujn)
         startActivity(intent)
 
     }

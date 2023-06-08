@@ -41,4 +41,10 @@ class BottomActivity : AppCompatActivity() {
         startActivity(intent)
         finish()
     }
+
+    fun Zavtrak(view: View) {
+        val intent = Intent(this@BottomActivity,BreakfastActivity::class.java)
+        startActivity(intent)
+        finish()
+    }
 }
