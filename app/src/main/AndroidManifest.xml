@@ -12,6 +12,9 @@
         android:theme="@style/Theme.LineFood"
         tools:targetApi="31">
         <activity
+            android:name=".BreakfastActivity"
+            android:exported="false" />
+        <activity
             android:name=".DiabetsActivity"
             android:exported="false" />
         <activity

@@ -134,9 +134,9 @@
                 android:layout_marginTop="25dp"
                 android:layout_gravity="center"
                 android:fontFamily="@font/gotham"
-                android:gravity="center"
-                android:text="МОЛОЧНЫЕ ПРОДУКТЫ: Кефир, молоко. \n \n \n
-ОВОЩИ: Свекла, морковь, картофель.\n \n \n
+                android:gravity="left"
+                android:text="МОЛОЧНЫЕ ПРОДУКТЫ:\n \n  · кефир \n  \n  · молоко \n \n \n
+ОВОЩИ:\n \n · свекла \n \n · морковь \n \n · картофель.\n \n \n
 КРУПА: Пшеничная, манная.\n \n \n
 ФРУКТЫ И ЯГОДЫ: Арбуз, виноград, бананы, малина, изюм, дыня, киви.\n \n \n
 МЯСНЫЕ ПРОДУКТЫ: Колбаса, сосиски, свинина, жирные сорта мяса, первые мясные бульоны.\n \n \n
@@ -156,6 +156,7 @@
                     android:layout_height="75dp"
                     android:layout_gravity="right"
                     android:layout_marginLeft="50dp"
+                    android:onClick="getMenuDiabet"
                     android:layout_marginRight="60dp"
                     android:backgroundTint="@color/white"
                     android:fontFamily="@font/gotham"
@@ -173,6 +174,7 @@
                     android:fontFamily="@font/gotham"
                     android:text="Назад"
                     android:textSize="17dp"
+                    android:onClick="getBack"
                     android:textColor="#8732CF"
                     app:cornerRadius="19dp" />
 
