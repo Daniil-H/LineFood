@@ -28,7 +28,7 @@ class DiabetsActivity : AppCompatActivity() {
         val zvtr: String = zavtrak.getText().toString()
         val obd: String = obed.getText().toString()
         val ujn: String = ujin.getText().toString()
-        val intent = Intent(this, BreakfastActivity::class.java)
+        val intent = Intent(this, BottomActivity::class.java)
         intent.putExtra("name", zvtr)
         intent.putExtra("obd", obd)
         intent.putExtra("ujn", ujn)

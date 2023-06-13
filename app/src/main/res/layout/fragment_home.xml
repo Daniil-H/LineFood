@@ -7,69 +7,11 @@
     tools:context=".ui.home.HomeFragment"
     android:background="#efffde">
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/button_zavtrak"
-        android:layout_width="280dp"
-        android:layout_height="97dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="152dp"
-        android:layout_marginEnd="64dp"
-        android:backgroundTint="@color/white"
-        android:fontFamily="@font/gotham"
-        android:text="Завтрак"
-        android:textAlignment="textStart"
-        android:textColor="#8732CF"
-        android:textSize="20dp"
-        android:onClick="Zavtrak"
-        app:cornerRadius="19dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/button_obed"
-        android:layout_width="280dp"
-        android:layout_height="97dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="64dp"
-        android:backgroundTint="@color/white"
-        android:fontFamily="@font/gotham"
-        android:text="Обед"
-        android:textAlignment="textStart"
-        android:textColor="#8732CF"
-        android:textSize="20dp"
-        app:cornerRadius="19dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_zavtrak" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/button_ujin"
-        android:layout_width="280dp"
-        android:layout_height="97dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="64dp"
-        android:backgroundTint="@color/white"
-        android:fontFamily="@font/gotham"
-        android:text="Ужин"
-        android:textAlignment="textStart"
-        android:textColor="#8732CF"
-        android:textSize="20dp"
-        app:cornerRadius="19dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_obed" />
-
     <TextView
         android:id="@+id/textHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="188dp"
+        android:layout_marginEnd="364dp"
         android:layout_marginBottom="34dp"
         android:text="TextView"
         android:visibility="invisible"
@@ -77,5 +19,86 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/Zavtrak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="160dp"
+        android:text=""
+        android:fontFamily="@font/gotham"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/obed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="120dp"
+        android:fontFamily="@font/gotham"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/ujin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="332dp"
+        android:layout_marginEnd="216dp"
+        android:fontFamily="@font/gotham"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="132dp"
+        android:fontFamily="@font/gotham"
+        android:text="Ваш завтрак"
+        android:textColor="#8732CF"
+        android:textSize="22dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="288dp"
+        android:layout_marginEnd="148dp"
+        android:fontFamily="@font/gotham"
+        android:text="Ваш обед"
+        android:textColor="#8732CF"
+        android:textSize="22dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:layout_marginEnd="148dp"
+        android:fontFamily="@font/gotham"
+        android:text="Ваш ужин"
+        android:textColor="#8732CF"
+        android:textSize="22dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
