@@ -1,18 +1,17 @@
 package com.example.linefood
 
-import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.linefood.databinding.ActivityBottomBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class BottomActivity : AppCompatActivity() {
     var data: String? = ""
@@ -57,6 +56,22 @@ class BottomActivity : AppCompatActivity() {
         obd.text=obeda
         ujn.text=ujina
 
+        if (zavtrak.text!="" && obd.text!="" && ujn.text!="")
+        {
+            val textView=findViewById<TextView>(R.id.textView8)
+            val textViewob=findViewById<TextView>(R.id.textView9)
+            val textViewuj=findViewById<TextView>(R.id.textView10)
+            textView.setVisibility(View.VISIBLE)
+            textViewob.setVisibility(View.VISIBLE)
+            textViewuj.setVisibility(View.VISIBLE)
+        }
+
+        //val prefs = getSharedPreferences("com.example.app", MODE_PRIVATE)
+        //prefs.edit().putString("tag", zavtrak.getText().toString()).apply();
+        //zavtrak.setText(prefs.getString("tag", ""));
+
+
+
     }
 
     fun SaveData(res: String?)
@@ -84,8 +99,9 @@ class BottomActivity : AppCompatActivity() {
         //SaveData(ujina)
     }
 
-    fun Zavtrak(view: View) {
-        val intent = Intent(this@BottomActivity,BreakfastActivity::class.java)
+
+    fun newActivitySvouaDieta(view: View) {
+        val intent = Intent(this@BottomActivity,SvoeMenuActivity::class.java)
         startActivity(intent)
         finish()
     }
