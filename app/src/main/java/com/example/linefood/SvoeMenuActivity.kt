@@ -26,4 +26,10 @@ class SvoeMenuActivity : AppCompatActivity() {
         intent.putExtra("ujn", ujn)
         startActivity(intent)
     }
+
+    fun getBack(view: View) {
+        val intent = Intent(this@SvoeMenuActivity,BottomActivity::class.java)
+        startActivity(intent)
+        finish()
+    }
 }
