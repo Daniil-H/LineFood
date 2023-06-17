@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DiabetsActivity"
+    tools:context=".JCTActivity"
     android:background="#efffde">
-
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="387dp"
+        android:layout_height="63dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="12dp"
         android:fontFamily="@font/gotham"
-        android:text="Диета для диабетиков"
+        android:gravity="center_horizontal"
+        android:text="Диета при проблемах с ЖКТ"
         android:textColor="#8732CF"
         android:textSize="32dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,18 +36,18 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
-            android:id="@+id/textViewZavtrakDiabet"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:layout_marginTop="32dp"
-            android:fontFamily="@font/gotham"
-            android:gravity="left"
-            android:text=" · Гречневая каша на воде\n \n · Запеченое яблоко\n \n · Несладкий чай"
-            android:textColor="@color/black"
-            android:textSize="23dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        android:id="@+id/textViewZavtrakDiabet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/gotham"
+        android:gravity="left"
+        android:text=" · Cалат овощной \n \n · Омлет паровой\n \n · Несладкий чай"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/textView5"
@@ -68,11 +68,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="48dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="156dp"
         android:fontFamily="@font/gotham"
         android:gravity="left"
-        android:text=" · Рыбный суп\n \n · Паровая котлета с овощами\n \n · Кисель"
+        android:text="· Мясо отварное \n \n· Щи вегетарианские\n \n· Компот"
         android:textColor="@color/black"
         android:textSize="23dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -98,11 +98,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="164dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
         android:fontFamily="@font/gotham"
         android:gravity="left"
-        android:text=" · Ленивые голубцы \n \n · Несладкий чай."
+        android:text=" · Голубцы овощные \n \n · Крупеник из гречневой крупы"
         android:textColor="@color/black"
         android:textSize="23dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -140,6 +140,5 @@
         app:cornerRadius="19dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
