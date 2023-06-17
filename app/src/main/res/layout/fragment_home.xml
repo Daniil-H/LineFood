@@ -22,12 +22,12 @@
 
     <TextView
         android:id="@+id/Zavtrak"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="160dp"
-        android:text=""
+        android:layout_width="291dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="104dp"
         android:fontFamily="@font/gotham"
+        android:text=""
         android:textColor="@color/black"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,10 +35,10 @@
 
     <TextView
         android:id="@+id/obed"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="180dp"
-        android:layout_marginEnd="120dp"
+        android:layout_width="304dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="96dp"
         android:fontFamily="@font/gotham"
         android:text=""
         android:textColor="@color/black"
@@ -48,10 +48,10 @@
 
     <TextView
         android:id="@+id/ujin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="332dp"
-        android:layout_marginEnd="216dp"
+        android:layout_width="305dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="308dp"
+        android:layout_marginEnd="96dp"
         android:fontFamily="@font/gotham"
         android:text=""
         android:textColor="@color/black"
@@ -103,11 +103,15 @@
 
     <TextView
         android:id="@+id/textViewRecommend"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="175dp"
-        android:layout_marginBottom="57dp"
-        android:text="TextView"
+        android:layout_width="388dp"
+        android:layout_height="89dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/gotham"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

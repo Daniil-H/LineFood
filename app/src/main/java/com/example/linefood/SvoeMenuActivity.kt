@@ -9,9 +9,6 @@ import android.view.View
 import android.widget.TextView
 
 class SvoeMenuActivity : AppCompatActivity() {
-    val zavtrak =findViewById<TextView>(R.id.editTextTextPersonName2)
-    val obed =findViewById<TextView>(R.id.editTextTextPersonName3)
-    val ujin =findViewById<TextView>(R.id.editTextTextPersonName4)
     var pref : SharedPreferences? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,6 +20,9 @@ class SvoeMenuActivity : AppCompatActivity() {
 
     fun getMenuSvoe(view: View) {
 
+        val zavtrak =findViewById<TextView>(R.id.editTextTextPersonName2)
+        val obed =findViewById<TextView>(R.id.editTextTextPersonName3)
+        val ujin =findViewById<TextView>(R.id.editTextTextPersonName4)
         val zvtr: String = zavtrak.getText().toString()
         val obd: String = obed.getText().toString()
         val ujn: String = ujin.getText().toString()

@@ -12,11 +12,13 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.linefood.databinding.ActivityBottomBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import org.w3c.dom.Text
 
 class BottomActivity : AppCompatActivity() {
     var data: String? = ""
     var obeda: String? = ""
     var ujina: String? = ""
+    var recomend: String? = ""
     var pref : SharedPreferences? = null
 
     private lateinit var binding: ActivityBottomBinding
@@ -45,6 +47,7 @@ class BottomActivity : AppCompatActivity() {
         data = intent.getStringExtra("name")
         obeda = intent.getStringExtra("obd")
         ujina = intent.getStringExtra("ujn")
+        recomend = intent.getStringExtra("rec")
         //pref=getSharedPreferences("Table", Context.MODE_PRIVATE)
         //data = pref?.getString("zavtrak",data)!!
         //obeda = pref?.getString("obed",obeda)!!
@@ -52,9 +55,11 @@ class BottomActivity : AppCompatActivity() {
         val zavtrak =findViewById<TextView>(R.id.Zavtrak)
         val obd =findViewById<TextView>(R.id.obed)
         val ujn =findViewById<TextView>(R.id.ujin)
+        val rec = findViewById<TextView>(R.id.textViewRecommend)
         zavtrak.text = data
         obd.text=obeda
         ujn.text=ujina
+        rec.text=recomend
 
         if (zavtrak.text!="" && obd.text!="" && ujn.text!="")
         {
@@ -102,6 +107,12 @@ class BottomActivity : AppCompatActivity() {
 
     fun newActivitySvouaDieta(view: View) {
         val intent = Intent(this@BottomActivity,SvoeMenuActivity::class.java)
+        startActivity(intent)
+        finish()
+    }
+
+    fun newActivityJCT(view: View) {
+        val intent = Intent(this@BottomActivity,JCTActivity::class.java)
         startActivity(intent)
         finish()
     }
