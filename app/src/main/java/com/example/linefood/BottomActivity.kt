@@ -4,6 +4,7 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -13,6 +14,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.example.linefood.databinding.ActivityBottomBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import org.w3c.dom.Text
+import java.util.*
 
 class BottomActivity : AppCompatActivity() {
     var data: String? = ""
@@ -66,9 +68,15 @@ class BottomActivity : AppCompatActivity() {
             val textView=findViewById<TextView>(R.id.textView8)
             val textViewob=findViewById<TextView>(R.id.textView9)
             val textViewuj=findViewById<TextView>(R.id.textView10)
+            val imagezavtrak=findViewById<ImageView>(R.id.imageView)
+            val imageobed=findViewById<ImageView>(R.id.imageView2)
+            val imageujin=findViewById<ImageView>(R.id.imageView3)
             textView.setVisibility(View.VISIBLE)
             textViewob.setVisibility(View.VISIBLE)
             textViewuj.setVisibility(View.VISIBLE)
+            imagezavtrak.setVisibility(View.VISIBLE)
+            imageobed.setVisibility(View.VISIBLE)
+            imageujin.setVisibility(View.VISIBLE)
         }
 
         //val prefs = getSharedPreferences("com.example.app", MODE_PRIVATE)

@@ -115,5 +115,41 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="97dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="76dp"
+        android:src="@drawable/obed"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="97dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="224dp"
+        android:src="@drawable/zavtrak"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="97dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="388dp"
+        android:src="@drawable/ujin"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="invisible" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
